@@ -1,0 +1,21 @@
+{
+  "name": "wyvern-eye-overlay",
+  "version": "1.0.0",
+  "author": "Wender Vega <https://github.com/VegaKunn>",
+  "description": "Real-time tactical monster vitals for 3DS emulation",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "engines": {
+    "node": "16"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "chalk": "5.0.0",
+    "memoryjs": "3.5.1",
+    "node-gyp": "12.2.0",
+    "ps-list": "8.1.1"
+  }
+}

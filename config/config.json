@@ -1,0 +1,24 @@
+{
+  "connection": {
+    "host": "127.0.0.1",
+    "port": 45987,
+    "scanInterval": 1500
+  },
+  "display": {
+    "showLargeMonsters": true,
+    "showSmallMonsters": true,
+    "showMaxHP": true,
+    "showHPPercent": true,
+    "showAddress": false,
+    "showStatusEffects": true
+  },
+  "limits": {
+    "maxSlots": 20,
+    "minHPForSmallMonsters": 1
+  },
+  "colors": {
+    "bossColor": "red",
+    "minionColor": "gray",
+    "percentAlert": 20
+  }
+}
