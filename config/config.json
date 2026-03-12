@@ -2,18 +2,19 @@
   "connection": {
     "host": "127.0.0.1",
     "port": 45987,
-    "scanInterval": 1500
+    "scanInterval": 700
   },
   "display": {
     "showLargeMonsters": true,
-    "showSmallMonsters": true,
+    "showSmallMonsters": false,
     "showMaxHP": true,
     "showHPPercent": true,
     "showAddress": false,
-    "showStatusEffects": true
+    "showStatusEffects": false,
+    "showDamage": true
   },
   "limits": {
-    "maxSlots": 20,
+    "maxSlots": 14,
     "minHPForSmallMonsters": 1
   },
   "colors": {

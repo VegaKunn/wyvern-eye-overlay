@@ -79,7 +79,7 @@
 
 ---
 
-## ⚙️ Configurações / Settings (config.ini)
+## ⚙️ Configurações / Settings (config.json)
 
 | Option / Opção      | Description (EN)            | Descrição (PT)                    |
 | :------------------ | :-------------------------- | :-------------------------------- |
