@@ -6,11 +6,11 @@
   },
   "display": {
     "showLargeMonsters": true,
-    "showSmallMonsters": false,
+    "showSmallMonsters": true,
     "showMaxHP": true,
     "showHPPercent": true,
-    "showAddress": false,
-    "showStatusEffects": false,
+    "showAddress": true,
+    "showStatusEffects": true,
     "showDamage": true
   },
   "limits": {

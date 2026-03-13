@@ -1,5 +1,12 @@
 import { readMemory } from "./memory.js";
 import getMonsterData from "../database/mh3u.js";
+import { Server } from "socket.io";
+import http from "http";
+
+const server = http.createServer();
+const io = new Server(server, {
+  cors: { origin: "http://localhost:3000" }, // URL do seu Next.js
+});
 
 let isProcessing = false;
 const cacheDano = {};
@@ -159,6 +166,22 @@ export async function updateHP(config) {
         console.log(`📍 ADDR: 0x${p4.toString(16).toUpperCase()}`);
 
       console.log("--------------------------------------------------");
+
+      // =============================
+      // 🖥️ Manda os dados para serem renderizados no Navegador
+      // =============================
+
+      const monsterData = {
+        address: `0x${p4.toString(16)}`, // ID ÚNICO
+        name: monster.name,
+        hp: monster.hp,
+        maxHp: monster.maxHp,
+        isLarge: monster.isLarge,
+        status: monster.status,
+        // ... resto dos dados
+      };
+
+      io.emit("monster_update", monsterData); // Envia para o Next.js
     }
   } catch (err) {
     console.log("🔥 ERRO NO SCANNER:", err);
@@ -166,3 +189,5 @@ export async function updateHP(config) {
     isProcessing = false;
   }
 }
+
+server.listen(4000, () => console.log("Socket Server on port 4000"));
