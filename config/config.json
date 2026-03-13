@@ -6,15 +6,15 @@
   },
   "display": {
     "showLargeMonsters": true,
-    "showSmallMonsters": false,
+    "showSmallMonsters": true,
     "showMaxHP": true,
     "showHPPercent": true,
     "showAddress": false,
-    "showStatusEffects": false,
+    "showStatusEffects": true,
     "showDamage": true
   },
   "limits": {
-    "maxSlots": 14,
+    "maxSlots": 30,
     "minHPForSmallMonsters": 1
   },
   "colors": {

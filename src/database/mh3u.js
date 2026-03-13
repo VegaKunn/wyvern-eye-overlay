@@ -89,6 +89,7 @@ const SMALL_MONSTERS_DB = {
   339: "Rock",
   340: "Rock",
 };
+
 // Função auxiliar para o Rage (Fúria) que é lido como Float no Python
 function readPythonFloat(buffer) {
   const hex = buffer.readUInt32LE(0).toString(16).padStart(8, "0");
