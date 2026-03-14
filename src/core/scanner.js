@@ -173,11 +173,16 @@ export async function updateHP(config) {
 
       const monsterData = {
         address: `0x${p4.toString(16)}`, // ID ÚNICO
+        code: monster.id, // O ID que você baixou a imagem
         name: monster.name,
         hp: monster.hp,
         maxHp: monster.maxHp,
         isLarge: monster.isLarge,
         status: monster.status,
+        damage: {
+          lastHit: dados.ultimoDano,
+          record: dados.recorde,
+        },
         // ... resto dos dados
       };
 
